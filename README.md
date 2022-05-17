@@ -4,7 +4,7 @@ https://bbs.pediy.com/thread-272795.htm
 
 ## Principle
 Set the thread entry address to IoCancelIrp and the context to the irp you created.
-Then the thread will call IoCancelIrp. when called, will perform the operation of calcelling the IRP.
+Then the thread will call IoCancelIrp. when called, will perform the operation of canlcelling the IRP.
 This will then call the IRP->CancelRoutine. so we just need to set our own thread entry address to IRP->CancelRoutine.
 
 ## How to detect?
